@@ -28,5 +28,6 @@
 	<classpathentry kind="lib" path="B:/Softwares/Java/Jars/spring-framework-3.0.1.RELEASE-A/dist/commons-logging-1.0.4.jar"/>
 	<classpathentry kind="lib" path="B:/Softwares/Java/Jars/spring-framework-3.0.1.RELEASE-A/dist/jstl-1.2.jar"/>
 	<classpathentry kind="lib" path="B:/Softwares/Java/Jars/spring-framework-3.0.1.RELEASE-A/dist/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="B:/Softwares/Java/Jars/log4j/log4j-1.2.14.jar"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>

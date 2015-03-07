@@ -5,6 +5,7 @@ import gov.trasport.online.employee.service.EmployeeManager;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -17,33 +18,34 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class EmployeeController {
+	static Logger logger = Logger.getLogger(EmployeeController.class);
 	@Autowired
-	@Qualifier(value="empManager")
+	@Qualifier(value = "empManager")
 	private EmployeeManager employeeManager;
+
 	public EmployeeManager getEmployeeManager() {
 		return employeeManager;
 	}
-	
+
 	public void setEmployeeManager(EmployeeManager employeeManager) {
 		this.employeeManager = employeeManager;
 	}
 
-	
-	
 	@RequestMapping("/employee")
-	public ModelAndView addEmployee(){
-		System.out.println("addEmployee:");
+	public ModelAndView addEmployee() {
+		logger.info("employee:addEmployee started");
 		ModelAndView mv = new ModelAndView("employeeList");
 		mv.addObject("employeeList", this.employeeManager.getEmployeeList());
+		logger.info("employee:addEmployee ended");
 		return mv;
 	}
+
 	public ModelAndView handleRequest(HttpServletRequest arg0,
 			HttpServletResponse arg1) throws Exception {
-		System.out.println("in EmployeeController");
-
+		logger.info("handleRequest started");
 		ModelAndView mv = new ModelAndView("employeeList");
 		mv.addObject("employeeList", this.employeeManager.getEmployeeList());
-
+		logger.info("handleRequest ended");
 		return mv;
 	}
 }
