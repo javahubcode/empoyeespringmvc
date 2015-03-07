@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+function fun()
+{
+	alert("hello");
+	
+}
