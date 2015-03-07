@@ -1,4 +1,6 @@
 
+\\
+
 create table department (dno varchar2(20) primary key,deptname varchar2(20) );
 insert into department values ('30','finance');
 select * from department;
