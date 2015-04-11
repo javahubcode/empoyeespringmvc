@@ -64,7 +64,7 @@ public class UserLoginController {
 	}
 
 	@RequestMapping("/loginGateway")
-	public ModelAndView displayLoginGatewayFrom() {
+	public ModelAndView displayLoginGatewayForm() {
 		logger.info("displayLoginGatewayFrom is called ");
 		ModelAndView mv = new ModelAndView("UserLogin");
 		mv.addObject("loginEntity", new UserLogin());
