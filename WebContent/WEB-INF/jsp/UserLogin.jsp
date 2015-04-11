@@ -6,14 +6,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/header-styles.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome to AP Online Employee Portal</title>
+<title>Welcome to AP Online Employee Portal || Login Page</title>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/js/jquery.js"></script>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/js/jquery.validate.js"></script>
 <script>
-
 alert("hello");
 $().ready(function() {
 	// validate the comment form when it is submitted
@@ -48,10 +49,12 @@ $().ready(function() {
 </script>
 </head>
 <body>
-
+	<jsp:include page="menuHeader.jsp"></jsp:include>
+	<br>
+	<br>
 	<center>
 		<img src='<c:url value="/portal/images/APOnline-Final.jpg"/>'
-			class="logo" /> <a href="employee_asserts.jsp"> <img
+			class="logo" /> <a href="index.jsp"> <img
 			src='<c:url value="/portal/images/home.jpg"/>' class="logo"
 			TITLE="Go to Home Page" /></a>
 	</center>
@@ -61,11 +64,11 @@ $().ready(function() {
 		<table align="center">
 			<tr>
 				<td>User Name</td>
-				<td><form:input  path="userName"></form:input></td>
+				<td><form:input path="userName"></form:input></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><form:password  path="password"></form:password></td>
+				<td><form:password path="password"></form:password></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -77,6 +80,6 @@ $().ready(function() {
 			</tr>
 		</table>
 	</form:form>
-
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

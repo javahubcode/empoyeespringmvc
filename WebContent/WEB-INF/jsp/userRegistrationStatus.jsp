@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome to AP Online Employee Portal</title>
+<title>Welcome to AP Online Employee Portal || Registration Status</title>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/js/jquery.js"></script>
 <script type="text/javascript"
@@ -55,6 +55,6 @@ $().ready(function() {
 			src='<c:url value="/portal/images/home.jpg"/>' class="logo"
 			TITLE="Go to Home Page" /></a>
 	</center>
-
+	
 </body>
 </html>

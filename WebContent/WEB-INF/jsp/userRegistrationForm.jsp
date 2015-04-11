@@ -9,6 +9,9 @@
 
 <html>
 <head>
+
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/header-styles.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet" href="jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -16,7 +19,8 @@
 <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
 <script src="jquery-ui.js"></script>
 <script src="jquery.validate.min.js"></script>
-<title>Welcome to AP Online Employee Portal</title>
+<title>Welcome to AP Online Employee Portal || User Registration
+	Page</title>
 <style>
 .divBackground {
 	background-color: #ccffcc;
@@ -103,9 +107,11 @@ Code added for scrollup
 									dpDate : true
 								},
 								securityAnswer : "required",
-								securityQuestions: "required",
-								address1: "required",
-								address2: "required"
+								securityQuestions : "required",
+								address1 : "required",
+								address2 : "required",
+								reCaptcha : "required"
+
 							},
 							messages : {
 								userName : "User Name Required",
@@ -131,9 +137,10 @@ Code added for scrollup
 									required : "Please enter Date Of Birth"
 								},
 								securityAnswer : "Please enter Security Answer",
-								securityQuestions: "Please select Security Question",
-								address1: "Please select Address Line 1",
-								address2: "Please select Address Line 2"
+								securityQuestions : "Please select Security Question",
+								address1 : "Please select Address Line 1",
+								address2 : "Please select Address Line 2",
+								reCaptcha : "Please enter Captcha Image "
 							},
 							errorPlacement : function(error, element) {
 								var name = $(element).attr("name");
@@ -221,10 +228,10 @@ Code added for scrollup
 			alert("Not OK");
 	}
 </script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-
-
+	<jsp:include page="menuHeader.jsp"></jsp:include>
 	<div id="msgid"></div>
 
 	<center>
@@ -304,15 +311,23 @@ Code added for scrollup
 				<tr>
 					<td>Select Security Question</td>
 					<td><form:select multiple="single" path="securityQuestions">
-							
-							 <form:option value="" label="--- Select ---"/>
-							<form:options items="${securityQuestionsList}"/>
-						</form:select> 	<label id="securityQuestions_validate" style="font-family: fantasy;"></label></td>
+
+							<form:option value="" label="--- Select ---" />
+							<form:options items="${securityQuestionsList}" />
+						</form:select> <label id="securityQuestions_validate"
+						style="font-family: fantasy;"></label></td>
 				</tr>
 				<tr>
 					<td align="right">Security Answer</td>
 					<td><form:input id="securityAnswer" path="securityAnswer"></form:input>
 						<label id="securityAnswer_validate" style="font-family: fantasy;"></label></td>
+				</tr>
+				<tr>
+					<td>Please enter Captcha</td>
+					<td><div class="g-recaptcha" id="reCaptcha"
+							data-sitekey="6LcnsP8SAAAAANCCxRzu22YE7NNtZb4ZsLQEo2mZ"></div> <label
+						id="reCaptcha_validate" style="font-family: fantasy;"></label></td>
+
 				</tr>
 				<tr>
 					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -6,7 +6,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
+
+<head>
+<title>Welcome to Employee Track Portal ||Delete Employee</title></head>
 <body>
+<jsp:include page="menuHeader.jsp"></jsp:include>
 	<center><h1>Update Employee</h1></center> 
 	
 	<center><img src='<c:url value="/portal/images/APOnline-Final.jpg"/>' class="logo"/>
@@ -33,5 +37,6 @@
 			</tr>
 		</table>
 	</form:form>
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

@@ -46,13 +46,26 @@ div.menu3sub {
 </style>
 </head>
 <body>
-<div align="right" ><b>Existing User? <a href="loginGateway.cgi" onclick="fun()">login</a></b></div>
+<div align="right" ><b><a href="loginGateway.cgi" onclick="fun()">login</a></b></div>
+<br>
 <jsp:include page="menuHeader.jsp"></jsp:include>
 <br>
 	<b>Welcome to Employee Track Portal</b>
 	<a href="employee_asserts.jsp">CLICK Here</a>
 		<%=request.getContextPath()%>
-		
+	
+	<br>
+	<div class="menu3">
+    <a href="/Home.jsp">Home</a>
+    <a href="#2">Services</a>
+    <a href="#3">Products</a>
+    <a href="#4">Contact Us</a>
+    <a href="loginGateway.cgi" onclick="fun()">login</a>
+    </div>
+    <div class="menu3sub"> </div>
+
+	
+	
 	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

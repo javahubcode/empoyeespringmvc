@@ -6,12 +6,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
+<head>
+<title>Welcome to Employee Track Portal || Add Employee</title></head>
 <body>
-	<center><h1>Add Employee</h1></center> 
-	
-	<center> <img src='<c:url value="/portal/images/APOnline-Final.jpg"/>' class="logo"/>
+<jsp:include page="menuHeader.jsp"></jsp:include>
+<br>
+<center> <img src='<c:url value="/portal/images/APOnline-Final.jpg"/>' class="logo"/>
 	<a href="employee_asserts.jsp"> <img src='<c:url value="/portal/images/home.jpg"/>' class="logo" TITLE="Go to Home Page" /></a></center>
-
 	<form:form method="post" modelAttribute="employeeEntity"
 		action="addEmployee.cgi">
 		<table align="center">
@@ -33,5 +34,6 @@
 			</tr>
 		</table>
 	</form:form>
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

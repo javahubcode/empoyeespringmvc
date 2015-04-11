@@ -9,6 +9,10 @@
 
 <html>
 <head>
+<jsp:include page="menuHeader.jsp"></jsp:include>
+<br>
+<link rel="stylesheet"
+	href="<%=request.getContextPath()%>/css/header-styles.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="stylesheet"
 	href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
@@ -86,6 +90,7 @@ body {
 </head>
 <body>
 
+ <jsp:include page="menuHeader.jsp"></jsp:include>
 	<center>
 		<img src='<c:url value="/portal/images/APOnline-Final.jpg"/>'
 			class="logo" /> <a href="employee_asserts.jsp"> <img
@@ -134,6 +139,7 @@ body {
 				</tr>
 			</table>
 		</div>
+		<jsp:include page="footer.jsp"></jsp:include>
 	</form:form>
 
 </body>
