@@ -125,10 +125,9 @@ li#main {
 								<a href="#"><b>sub menu item 4</b></a>
 							</div></li>
 					</ul></li>
-
-				<li id="main"><a href="#">Products</a>
+				<li id="main"><a href="#">Products </a>
 					<ul id="subnav">
-						<li><a href="#">sub menu item 1</a></li>
+						<li><a href="#">sub menu item </a></li>
 						<li><a href="#">sub menu item 2</a></li>
 						<li><a href="#">sub menu item 3</a></li>
 						<li><a href="#">sub menu item 4</a></li>

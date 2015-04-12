@@ -54,7 +54,8 @@ $().ready(function() {
 	<br>
 	<center>
 		<img src='<c:url value="/portal/images/APOnline-Final.jpg"/>'
-			class="logo" /> <a href="index.jsp"> <img
+			class="logo" /> <a href="index.cgi"> 
+			<img
 			src='<c:url value="/portal/images/home.jpg"/>' class="logo"
 			TITLE="Go to Home Page" /></a>
 	</center>
