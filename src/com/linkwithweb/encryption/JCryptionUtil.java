@@ -18,7 +18,7 @@ import javax.crypto.Cipher;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
- * @author Ashwin Kumar
+ * 
  * 
  */
 public class JCryptionUtil {
