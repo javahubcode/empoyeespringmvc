@@ -187,7 +187,7 @@ Code added for scrollup
 	});
 
 	$(document).ready(function() {
-		$("#msgid").html("This is Hello World by JQuery");
+		//$("#msgid").html("This is Hello World by JQuery");
 		// alert('Hello');
 	});
 
@@ -242,7 +242,7 @@ Code added for scrollup
 	</center>
 
 	<form:form method="post" id="validateUserLogin"
-		modelAttribute="loginEntity" action="validateUserLogin.cgi">
+		modelAttribute="loginEntity" action="validateUserLoginAndPostData.cgi">
 
 		<div class="divBackground" align="center">
 			<table align="center">

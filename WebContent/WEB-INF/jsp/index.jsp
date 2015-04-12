@@ -2,8 +2,7 @@
 <html>
 
 <head>
-<title> <img src='<c:url value="/portal/images/APOnline-Final.jpg"/>'/> Welcome to Employee Track Portal || Index</title>
-
+<title>Welcome to Employee Track Portal || Index</title>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/js/extFormvalidation.js"></script>
 <style type="text/css">

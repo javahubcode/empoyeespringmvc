@@ -71,17 +71,26 @@ public class UserLoginController {
 		logger.info("displayLoginGatewayFrom is ended ");
 		return mv;
 	}
+	
+	@RequestMapping("/index")
+	public ModelAndView  displayIndex(){
+		logger.info("displayindexjsp page is called ");
+		ModelAndView mv= new ModelAndView("index");
+		return mv;
+		
+	}
 
-	@RequestMapping("/validateUserLogin")
+	@RequestMapping("/validateUserLoginAndPostData")
 	public ModelAndView validateUserLogin(@ModelAttribute UserLogin e) {
 		logger.info("validateUserLogin is called ");
 		logger.info("=====Username:" + e.getUserName() + "====password:"
 				+ e.getPassword());
 
+		
 		ModelAndView mv = new ModelAndView("userRegistrationStatus");
 		mv.addObject("loginEntity", new UserLogin());
 		// pass model object to the service layer
-
+		
 		logger.info("validateUserLogin ended");
 		return mv;
 	}

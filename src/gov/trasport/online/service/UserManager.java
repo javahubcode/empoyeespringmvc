@@ -28,6 +28,7 @@ public class UserManager {
 	public void setUserDAOTemplate(UserDAO userDAOTemplate) {
 		this.userDAOTemplate = userDAOTemplate;
 	}
-
+	
+	
 
 }
