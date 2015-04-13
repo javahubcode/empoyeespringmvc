@@ -8,6 +8,7 @@
 <html>
 <head>
 <title>Welcome to Employee Track Portal || Add Employee</title></head>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <body>
 <jsp:include page="menuHeader.jsp"></jsp:include>
 <br>

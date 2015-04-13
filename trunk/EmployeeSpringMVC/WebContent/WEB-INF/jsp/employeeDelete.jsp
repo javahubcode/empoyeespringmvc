@@ -8,6 +8,7 @@
 <html>
 
 <head>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <title>Welcome to Employee Track Portal ||Delete Employee</title></head>
 <body>
 <jsp:include page="menuHeader.jsp"></jsp:include>

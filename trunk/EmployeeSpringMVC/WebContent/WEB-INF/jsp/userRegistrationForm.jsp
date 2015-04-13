@@ -19,6 +19,8 @@
 <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
 <script src="jquery-ui.js"></script>
 <script src="jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
+
 <title>Welcome to AP Online Employee Portal || User Registration
 	Page</title>
 <style>
@@ -227,10 +229,34 @@ Code added for scrollup
 		else
 			alert("Not OK");
 	}
+	//Prevent CTR+V,CTR+C AND CTRL+A operations for password
+	$(document).ready(function() {
+		$('#password').bind("cut copy paste", function(e) {
+			e.preventDefault();
+		});
+
+	});
+	//Prevent CTR+V,CTR+C AND CTRL+A operations for Primary emai id
+	$(document).ready(function() {
+		$('#emailId').bind("cut copy paste", function(e) {
+			e.preventDefault();
+		});
+
+	});
+	//Prevent CTR+V,CTR+C AND CTRL+A operations for mobile number
+	$(document).ready(function() {
+		$("#phoneNumber").bind("cut copy paste", function(e) {
+			e.preventDefault();
+		});
+
+	});
 </script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
+<!-- <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown = "return disableCtrlKeyCombination(event);">  -->
 <body>
+	<marquee direction="right" behavior="scroll" bgcolor="RED">Breaking
+		news ..NBK Played Jokes !...</marquee>
 	<jsp:include page="menuHeader.jsp"></jsp:include>
 	<div id="msgid"></div>
 

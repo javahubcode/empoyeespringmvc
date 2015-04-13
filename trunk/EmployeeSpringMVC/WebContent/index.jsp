@@ -2,10 +2,13 @@
 <html>
 
 <head>
-<title> <img src='<c:url value="/portal/images/APOnline-Final.jpg"/>'/> Welcome to Employee Track Portal || Index</title>
+<title>  Welcome to Employee Track Portal || Index</title>
 
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/js/extFormvalidation.js"></script>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
+
+
 <style type="text/css">
 div.menu3 {
 	/*width:500px;margin:0 auto;*/

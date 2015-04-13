@@ -9,6 +9,7 @@
 
 <head>
 <title>Welcome to Employee Track Portal || Employee Update</title></head>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <body>
 <jsp:include page="menuHeader.jsp"></jsp:include>
 	<center><h1>Update Employee</h1></center> 

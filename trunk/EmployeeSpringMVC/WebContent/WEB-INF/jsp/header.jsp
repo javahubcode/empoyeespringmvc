@@ -4,6 +4,7 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"
 	type="text/javascript"></script>
 <script src="script.js"></script>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <title>CSS Employee Menu Maker</title>
 </head>
 <body>

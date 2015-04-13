@@ -1,5 +1,6 @@
 <html>
 <head>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <link rel="stylesheet" href="css/footer-styles.css">
 <title>CSS Employee Menu Maker</title>
 </head>
