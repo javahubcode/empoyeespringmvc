@@ -9,7 +9,7 @@
 	href="<%=request.getContextPath()%>/css/header-styles.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome to Employee Track Portal || Employee Asserts</title>
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 </head>
 <body>
 <jsp:include page="menuHeader.jsp"></jsp:include>

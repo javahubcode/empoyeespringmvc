@@ -5,6 +5,7 @@
 <title>Welcome to Employee Track Portal || Index</title>
 <script type="text/javascript"
 	src="<%=request.getContextPath()%>/js/extFormvalidation.js"></script>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <style type="text/css">
 div.menu3 {
 	/*width:500px;margin:0 auto;*/
@@ -46,13 +47,15 @@ div.menu3sub {
 </style>
 </head>
 <body>
-<div align="right" ><b>Existing User? <a href="loginGateway.cgi" onclick="fun()">login</a></b></div>
-<jsp:include page="menuHeader.jsp"></jsp:include>
-<br>
+	<div align="right">
+		<b>Existing User? <a href="loginGateway.cgi" onclick="fun()">login</a></b>
+	</div>
+	<jsp:include page="menuHeader.jsp"></jsp:include>
+	<br>
 	<b>Welcome to Employee Track Portal</b>
 	<a href="employee_asserts.jsp">CLICK Here</a>
-		<%=request.getContextPath()%>
-		
+	<%=request.getContextPath()%>
+
 	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

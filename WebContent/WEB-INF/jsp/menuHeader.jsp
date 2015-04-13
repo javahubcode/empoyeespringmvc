@@ -5,6 +5,7 @@
 	type="text/javascript"></script>
 <script src="script.js"></script>
 <title>CSS Employee Menu Maker</title>
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 </head>
 <style type="text/css">
 /* Derived from http://www.devinrolsen.com/pure-css-horizontal-menu/ */

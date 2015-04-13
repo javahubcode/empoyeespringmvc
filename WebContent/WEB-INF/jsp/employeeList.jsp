@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
+<script type="text/javascript" src="js/security/securityAsserts.js"></script>
 <head>
 <title>Welcome to Employee Track Portal || Employee Report</title></head>
 <style type="text/css">
